@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
 import hashlib
 
-
 """
 If you found self here , this a just a python script using only the print and input functions.
 """
 
 
-
 def main():
-
 
     print("Level 4".center(50, "="))
     print()
@@ -27,7 +24,10 @@ def main():
 
     ans_1 = input("Please enter the command: ").lower().strip()
 
-    if hashlib.md5(ans_1.encode()).hexdigest() not in ["57bbe662f351b2cb134e6116368b7f89", "1adfba80874d51bf721f36a04e2a2058"]:
+    if hashlib.md5(ans_1.encode()).hexdigest() not in [
+        "57bbe662f351b2cb134e6116368b7f89",
+        "1adfba80874d51bf721f36a04e2a2058",
+    ]:
         print("Incorrect! Please read level_0 again.")
         return
 
@@ -39,7 +39,9 @@ def main():
     print("Which command is used to checkout that specified branch? ")
     ans_2 = input("Please enter the command: ").lower().strip()
 
-    if hashlib.md5(ans_2.encode()).hexdigest() not in ["f5f30735bee7060fd7d1fe2737159182"]:
+    if hashlib.md5(ans_2.encode()).hexdigest() not in [
+        "f5f30735bee7060fd7d1fe2737159182"
+    ]:
         print("Incorrect! Please read level_0 again.")
         return
 
@@ -50,19 +52,25 @@ def main():
     print("Question 3:")
     print("You want to immediately create a new branch and switch to it.")
 
-    ans_3 = input("Which command can be used to create and switch to a new branch? ").lower().strip()
+    ans_3 = (
+        input("Which command can be used to create and switch to a new branch? ")
+        .lower()
+        .strip()
+    )
 
     if ans_3 not in ["git switch -c new-branch"]:
         print("Incorrect! Read the README again.")
         return
 
     print("Correct!")
-  
+
     print()
     print("Question 4:")
     print("You want to delete a branch called new-branch.")
     ans_4 = input("Which command would you use to delete the branch? ").lower().strip()
-    if hashlib.md5(ans_4.encode()).hexdigest() not in ["5f0c5ab3073c41947a069eddfcc41e53"]:
+    if hashlib.md5(ans_4.encode()).hexdigest() not in [
+        "5f0c5ab3073c41947a069eddfcc41e53"
+    ]:
         print("Incorrect! Please read level_0 again.")
         return
     print("Correct!")
@@ -71,7 +79,9 @@ def main():
     print("Question 5:")
     print("You want to force delete a branch called new-branch.")
     ans_5 = input("Which command would you use to force delete the branch? ").strip()
-    if hashlib.md5(ans_5.encode()).hexdigest() not in ["cf6b55e617e2c3484bbb5c34c1a920b0"]:
+    if hashlib.md5(ans_5.encode()).hexdigest() not in [
+        "cf6b55e617e2c3484bbb5c34c1a920b0"
+    ]:
         print("Incorrect! Please read level_0 again.")
         return
     print("Correct!")
@@ -98,7 +108,8 @@ def main():
         exit(0)
     print("Correct!")
     print()
-    print(" Level 2 Completed ".center(50 , "="))
+    print(" Level 4 Completed ".center(50, "="))
+
 
 if __name__ == "__main__":
     main()

@@ -32,7 +32,7 @@ def get_current_branch():
 status = "detached" if "detached" in get_current_branch().split(" ") else "not detached"
 if __name__ == "__main__":
     if status != "detached":
-        print("Level 2".center(50, "="))
+        print("Level 4".center(50, "="))
         print("Task 4".center(10))
         print("""
         After editing you've realized that you forgot to backup the old code for Arduino boards.\n

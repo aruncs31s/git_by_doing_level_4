@@ -43,7 +43,7 @@ def get_current_branch():
 
 if __name__ == "__main__":
     if check_branch_branches() < 2 and get_current_branch() == "main":
-        print("Level 2".center(50, "="))
+        print("Level 4".center(50, "="))
         print("Task 1".center(10))
         print("""
         This directory contains the the code for the famous LED Blink\n

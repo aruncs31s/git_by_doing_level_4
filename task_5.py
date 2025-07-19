@@ -40,7 +40,7 @@ status = "detached" if "detached" in get_current_branch().split(" ") else "not d
 if __name__ == "__main__":
     if status == "detached":
         if  "Arduino" not in get_branch_names() and "ESP8266" in get_branch_names():
-            print("Level 2".center(50, "="))
+            print("Level 4".center(50, "="))
             print("Task 4".center(10))
             print("""
             Now that you found the old code for Arduino boards, i want you to create a new branch called 'Arduino' and move the old code to that branch.\n

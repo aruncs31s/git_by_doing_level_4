@@ -18,7 +18,7 @@ def get_led_builtin():
 
 if __name__ == "__main__":
     if get_current_branch() == "main" and str(get_led_builtin()) == "13" :
-        print("Level 2".center(50, "="))
+        print("Level 4".center(50, "="))
         print("Task 2".center(10))
         print("""
         Now that you have created the branch 'ESP8266',\n

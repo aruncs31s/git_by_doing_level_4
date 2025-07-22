@@ -13,7 +13,6 @@ if __name__ == "__main__":
               """)
         print("----------------------------------------------------------------")
         print('Your task is to go to main and modify the code to run on ESP8266 Boards.')
-        print("Please comeback after creating the specified branch  ")
         exit(1)
     elif get_current_branch() == "main" and get_led_builtin() != "D4":
         print("You have to also modify the code.")
